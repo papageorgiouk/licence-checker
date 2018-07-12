@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Licence checker</string>
+    <string name="verify">Verify</string>
+    <string name="enter_licence_number">Enter licence number</string>
+</resources>
