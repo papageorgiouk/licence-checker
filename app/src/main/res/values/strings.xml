@@ -2,4 +2,10 @@
     <string name="app_name">Licence checker</string>
     <string name="verify">Verify</string>
     <string name="enter_licence_number">Enter licence number</string>
+    <string name="success">Success!</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="not_valid_licence">Not a valid licence</string>
+    <string name="not_valid_input">Not a valid input. Please enter the licence number</string>
+    <string name="you_have_a_licence">You have a %1$s licence</string>
 </resources>

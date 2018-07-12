@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity(), MainView {
     override fun displaySuccess(licenceType: LicenceType) {
         runOnUiThread{
             AlertDialog.Builder(this).apply {
-                setTitle("Success!")
-                setMessage("You have a ${licenceType.toString()} licence")
-                setPositiveButton("OK", null)
+                setTitle(getString(R.string.success))
+                setMessage(getString(R.string.you_have_a_licence, licenceType.toString()))
+                setPositiveButton(getString(R.string.ok), null)
                 create()
                 show()
             }
@@ -42,9 +42,9 @@ class MainActivity : AppCompatActivity(), MainView {
     override fun displayFail() {
         runOnUiThread{
             AlertDialog.Builder(this).apply {
-                setTitle("Error")
-                setMessage("Not a valid licence")
-                setPositiveButton("OK", null)
+                setTitle(getString(R.string.error))
+                setMessage(getString(R.string.not_valid_licence))
+                setPositiveButton(getString(R.string.ok), null)
                 create()
                 show()
             }
@@ -53,9 +53,9 @@ class MainActivity : AppCompatActivity(), MainView {
 
     override fun displayNotValidInputError() {
         AlertDialog.Builder(this).apply {
-            setTitle("Error")
-            setMessage("Not a valid input. Please enter the licence number")
-            setPositiveButton("OK", null)
+            setTitle(getString(R.string.error))
+            setMessage(getString(R.string.not_valid_input))
+            setPositiveButton(getString(R.string.ok), null)
             create()
             show()
         }
